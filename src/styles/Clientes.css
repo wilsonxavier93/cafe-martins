@@ -1,0 +1,284 @@
+.pagina-container {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    width: 290px;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    width: 163px;
+    height: 163px;
+    background-color: #4C3A3A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
+
+.menu-item span {
+    margin-left: 10px; /* Adicionando margem à esquerda do texto pq estava colado no icon*/
+}
+
+
+.menu-item:hover, .menu-item:focus {
+    background-color: #4C3A3A;
+    border-radius: 4px;
+    outline: none;
+}
+
+.logout {
+    margin-top: auto;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4C3A3A;
+    border: none;
+    color: white;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout span {
+    margin-left: 10px; /* Adicionando margem à esquerda do texto pq estava colado no icon*/
+}
+
+.conteudo-pagina {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Garante que o conteúdo seja disposto como uma coluna */
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4C3A3A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actions span {
+    margin-left: 10px; /* Adicionando margem à esquerda do texto pq estava colado no icon*/
+}
+
+.actions .add-client {
+    background-color: #4C3A3A;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-container button.search {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4C3A3A;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4C3A3A;
+    color: white;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+table tbody td {
+    border-color: #f0f0f0;
+}
+
+table th:first-child, table td:first-child {
+    width: 15%;
+}
+
+table th:nth-child(2), table td:nth-child(2) {
+    width: 40%;
+}
+
+table th:nth-child(3), table td:nth-child(3), 
+table th:nth-child(4), table td:nth-child(4) {
+    width: 20%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%; /* Define a largura máxima */
+    max-height: 80%; /* Define a altura máxima */
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Move o modal para o centro */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #A30404;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal form label {
+    margin: 20px 0 5px; /* Alterado o margin-top para 20px */
+}
+
+.modal form input[type="text"],
+.modal form input[type="email"],
+.modal form input[type="date"],
+.modal form textarea,
+.modal form select {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px; 
+}
+
+.modal form input[type="date"] {
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal form textarea {
+    resize: vertical;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: right;
+}
+
+.modal-buttons button {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #4C3A3A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.modal-buttons button span {
+    margin-right: 10px;
+}
+
+.modal-buttons .save {
+    background-color: #005800;
+}
+
+.modal-buttons .delete {
+    background-color: #A30404;
+}
