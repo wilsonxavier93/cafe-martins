@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Clientes.css'; // Importar o arquivo CSS local
+import logoCafe from '../assets/logo-cafe.png'; // Importa a imagem logo
 import Modal from '../components/ModalClientes'; // Importar o componente Modal
 import { BsPeople, BsCart2, BsBox2, BsCurrencyDollar, BsTruck, BsPower, BsPersonPlus, BsSearch, BsFunnel } from "react-icons/bs";
 
@@ -18,7 +19,7 @@ const Clientes = () => {
         <div className='pagina-container'>
             <div className="sidebar">
                 <div className="logo-container">
-                    <img src="./assets/logo-cafe.png" alt="Logo" />
+                    <img src={logoCafe} alt="Logo" />
                 </div>
                 <a href=" " className="menu-item"><BsPeople /> <span>Clientes</span></a>
                 <a href=" " className="menu-item"><BsCart2 /> <span>Vendas</span></a>

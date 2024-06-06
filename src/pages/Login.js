@@ -1,11 +1,13 @@
 import React from 'react';
 import '../styles/Login.css';
+import logoCafe from '../assets/logo-cafe.png'; // Importa a imagem logo
+
 
 const Login = () => {
   return (
     <div className="container">
       <div className="logo">
-        <img src='./assets/logo-cafe.png' alt="Logo" />
+      <img src={logoCafe} alt="Logo" />
       </div>
       <div className="login-box">
         <form action="/login" method="post">
